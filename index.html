@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="form">
+      <h2>Contact Us!</h2>
+      <p> We would love to hear from you!</p>
+      <p>Please use the Contact Form to send us a message.</p>
+
+      <!-- The url of the script you use -->
+      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbx53O1TvQh8qM8MCWMtmXAJalALLoQf5mZc64f__ostC-xF95F2/exec">
+      <!-- Add the inputs in here -->
+
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What ya mamma calls you" />
+
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" placeholder="Idk.."></textarea>
+
+        <label for="animal">Favourite Animal: </label>
+        <input id="animal" name="animal" placeholder="dog" />
+
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" value="" required placeholder="email"/>
+
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+
+        
+
+        <button>Submit the form yo</button>
+
+      </form>
+    </div>
+
+    <!-- Thank you section -->
+    <div id="thankyou">
+      <h2>Shot for contacting us bro. We will get back to ya soon!</h2>
+      <button id='back-button'>Take me back baby</button>
+    </div>
+  </div>
+</body>
+
+<!-- Script to the db logic -->
+<script data-cfasync="false" type="text/javascript" src="ajax.js"></script>
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</body>
+</html>
